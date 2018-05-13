@@ -1,0 +1,10 @@
+.navbar {
+    background-color: deeppink;
+    display: flex;
+
+    justify-self: center;
+
+    & > * {
+        margin: 0 20px;
+    }
+}
