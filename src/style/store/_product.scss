@@ -1,0 +1,16 @@
+.product {
+    &__front {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 220px 20px;
+        grid-row-gap: 20px;
+
+        img {
+
+
+        }
+        label {
+ 
+        }
+    }
+}
