@@ -7,9 +7,19 @@ import Store from './store/store';
 
 class Home extends Component {
   render() {
+
+    const actions = [
+      {
+        title: "Login", path: "/signup"
+      },
+      {
+        title: "Shop", path: "/signup"
+      },
+    ]
+
     return (
       <div className="home">
-        <Header/>
+        <Header actions={actions}/>
         <Navbar/>
         <SearchBar/>
         <Store/>
