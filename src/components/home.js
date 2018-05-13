@@ -11,10 +11,7 @@ class Home extends Component {
     const actions = [
       {
         title: "Login", path: "/signup"
-      },
-      {
-        title: "Shop", path: "/signup"
-      },
+      }
     ]
 
     return (

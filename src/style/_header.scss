@@ -2,8 +2,24 @@
     background: skyblue;
     justify-self: center;
 
+    height: 50px;
+    width: 100%;
+
     display: grid;
+    grid-template-columns: 50px 50%;
+
+    justify-content: end;
+
     img {
-        // justify-content: center;
+        transform: translate(25px);
+    }
+
+    &__links {
+        align-self: center;
+        justify-self: end;    
+    }
+
+    &__link {
+        margin: 0 10px;
     }
 }
