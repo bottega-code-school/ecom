@@ -38,12 +38,12 @@ class SigninForm extends Component {
                 <div className="signin-form__line"></div>
                 <button className="signin-form__login-button" type="submit">Login</button>
 
-                <div className="password-requirements">
-                    <div className="password-requirements__title">QuickLinks</div>
+                <div className="quicklinks">
+                    <div className="quicklinks__title">QuickLinks</div>
                     <Link to="/signin">Not registered? Create account here.</Link>
                     <Link to="/signin">Forgot account email</Link>
                     <Link to="/signin">Forgot Password</Link>
-                    <Link to="/">Continue as a Guest</Link>
+                    <Link className="quicklinks__guest" to="/">Continue as a Guest</Link>
                 </div>
             </form>
         )
