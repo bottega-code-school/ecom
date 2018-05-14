@@ -22,27 +22,27 @@ class SigninForm extends Component {
         const { handleSubmit } = this.props;
 
         return (
-            <form className="signup-form" onSubmit={handleSubmit}>
-                <h1 className="signup-form__register">Login</h1>
+            <form className="signin-form" onSubmit={handleSubmit}>
+                <h1 className="signin-form__login-title">Login</h1>
 
-                <div className="signup-form__email">
+                <div className="signin-form__email">
                     <label>Email</label>
                     <Field name="email" type="email" component={this.renderInput}/>
                 </div>
 
-                <div className="signup-form__password">
+                <div className="signin-form__password">
                     <label>Password</label>
                     <Field name="password" type="password" component={this.renderInput}/>
                 </div>
  
-                <div className="signup-form__line"></div>
-                <button className="signup-form__submit" type="submit">Login</button>
+                <div className="signin-form__line"></div>
+                <button className="signin-form__login-button" type="submit">Login</button>
 
                 <div className="password-requirements">
                     <div className="password-requirements__title">QuickLinks</div>
-                    <Link to="/signup">Not registered? Create account here.</Link>
-                    <Link to="/signup">Forgot account email</Link>
-                    <Link to="/signup">Forgot Password</Link>
+                    <Link to="/signin">Not registered? Create account here.</Link>
+                    <Link to="/signin">Forgot account email</Link>
+                    <Link to="/signin">Forgot Password</Link>
                     <Link to="/">Continue as a Guest</Link>
                 </div>
             </form>
