@@ -1,0 +1,41 @@
+.purchase-history {
+    display: grid;
+    grid-template-areas: "title title title"
+                         "products . details"
+                         "products . details";
+
+    &__title {
+        grid-area: title;
+        border-bottom: 1px solid #CCCCCC;
+    }
+    &__products {
+        grid-area: products;
+    }
+    &__details {
+        grid-area: details;
+    }
+}
+
+.details {
+    &__order-number {
+
+    }
+    &__order-date {
+
+    }
+    &__shipping-address {
+
+    }
+    &__total {
+
+    }
+    &__credit-card {
+
+    }
+    &__track-shipment {
+
+    }
+    &__print-receipt {
+
+    }
+}

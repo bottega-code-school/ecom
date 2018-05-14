@@ -27,7 +27,7 @@ class PurchaseHistory extends Component {
                 <div className="purchase-history__products">
                     {this.renderProducts(productsData)}
                 </div>
-                <div className="details">
+                <div className="purchase-history__details details">
                     {Details('Order Number', 'A004847493', 'order-number')}
                     {Details('Order Date', '01/03/18', 'order-date')}
                     {Details('Shipping Address', 'J-Hidgey - 1234 WEST STATE', 'shipping-address')}
