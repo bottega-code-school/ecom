@@ -1,8 +1,8 @@
 .purchase-history {
     display: grid;
-    grid-template-areas: "title title title"
-                         "products . details"
-                         "products . details";
+    grid-template-areas: "title title title title title"
+                         "products products . details details"
+                         "products products . details details";
 
     &__title {
         grid-area: title;
@@ -10,6 +10,9 @@
     }
     &__products {
         grid-area: products;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 80px);
+        grid-gap: 10px;
     }
     &__details {
         grid-area: details;

@@ -13,12 +13,12 @@ class PurchaseHistory extends Component {
 
     render() {
         const productsData = [
-            {imageUrl: 'http://via.placeholder.com/50x50'},
-            {imageUrl: 'http://via.placeholder.com/50x50'},
-            {imageUrl: 'http://via.placeholder.com/50x50'},
-            {imageUrl: 'http://via.placeholder.com/50x50'},
-            {imageUrl: 'http://via.placeholder.com/50x50'},
-            {imageUrl: 'http://via.placeholder.com/50x50'}
+            {imageUrl: 'http://via.placeholder.com/80x80'},
+            {imageUrl: 'http://via.placeholder.com/80x80'},
+            {imageUrl: 'http://via.placeholder.com/80x80'},
+            {imageUrl: 'http://via.placeholder.com/80x80'},
+            {imageUrl: 'http://via.placeholder.com/80x80'},
+            {imageUrl: 'http://via.placeholder.com/80x80'}
         ]
 
         return (
