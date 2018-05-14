@@ -10,7 +10,7 @@ class SignupForm extends Component {
         return (
             <div>
                 <input {...field.input} type={field.type}/>
-                <span>
+                <span className="form-error">
                 {
                     field.meta.touched && field.meta.error && <span> {field.meta.error} </span>
                 }    
@@ -48,8 +48,35 @@ class SignupForm extends Component {
     }
 }
 
+function validate(values) {
+    const errors = {};
+
+    if(!values.name) {
+        errors.name = "Enter your name";
+    }
+
+    if(!values.email) {
+        errors.email = "Enter a valid email address";
+    }
+
+    if(!values.password) {
+        errors.password = "Enter a password";
+    }
+
+    if(!values.confirm) {
+        errors.confirm = "Confirm your password";
+    }
+
+    if(values.password != values.confirm) {
+        errors.confirm = "Passwords do not match"
+    }
+
+    return errors;
+}
+
 SignupForm = reduxForm({
-    form: 'signup'
+    form: 'signup',
+    validate
 })(SignupForm);
 
 export default SignupForm;
