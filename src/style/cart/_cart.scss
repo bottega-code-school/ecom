@@ -1,4 +1,5 @@
 .cart {
+    color: ghostwhite;
     display: grid;
     grid-template-rows: [toggle-s] 40px [toggle-e space-s] 15px [space-e body-s] 1fr [body-e];
 
@@ -34,18 +35,24 @@
             }
         }
         &__footer {
+            background-color: #1A1A1A;
             grid-row: footer-s / footer-e;
             grid-column: body-s/body-e;
-            display: grid;
-            // grid-template-columns: 
-            &__checkout {
 
+            display: grid;
+            grid-template-columns: minmax(5px, 50px) [checkout-s] 1fr [checkout-e subtotal-s] 1fr [subtotal-e total-s] 46px minmax(5px, 30px);
+            align-items: center;
+
+            &__checkout {
+                grid-column: checkout-s / checkout-e;
             }
             &__subtotal {
-
+                grid-column: subtotal-s / subtotal-e;
+                justify-self: end;
+                margin-right: 10px;
             }
             &__total {
-
+                grid-column: total-s;
             }
         }
     }
