@@ -4,6 +4,7 @@ import Header from './header';
 import Navbar from './navbar';
 import SearchBar from './searchBar';
 import Store from './store/store';
+import Cart from './cart/cart';
 
 class Home extends Component {
 
@@ -56,6 +57,7 @@ class Home extends Component {
         <Navbar actions={navbarActions}/>
         <SearchBar/>
         <Store/>
+        <Cart/>
       </div>
     );
   }
