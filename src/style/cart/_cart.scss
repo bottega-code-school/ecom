@@ -1,0 +1,33 @@
+.cart {
+    display: grid;
+
+    &__toggle {
+
+    }
+    &__body {
+        display: grid;
+        &__title {
+            
+        }
+        &__products {
+            display: grid;
+            &__wrapper {
+
+            }
+        }
+        &__footer {
+            display: grid;
+            &__checkout {
+
+            }
+            &__subtotal {
+
+            }
+            &__total {
+
+            }
+        }
+    }
+
+
+}

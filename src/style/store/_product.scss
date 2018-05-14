@@ -1,9 +1,4 @@
 
-.store {
-    // align-items: center;
-    // justify-items: center;
-}
-
 .product {
     position: relative;
     height: 314px;
@@ -28,12 +23,16 @@
     }
 
     &__back {
+        height: 100%;
+        width: 100%;
+
         background-color: skyblue;
         position: absolute;
         top: 0;
         left: 0;
 
         display: grid;
+        grid-gap: 10px;
         grid-template-rows: 20px 185px 32px 41px;
         grid-template-columns: 65px 29px 97px;
         justify-items: center;
