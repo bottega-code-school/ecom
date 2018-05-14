@@ -1,11 +1,23 @@
 .cart {
     display: grid;
+    grid-template-rows: [toggle-s] 40px [toggle-e space-s] 15px [space-e body-s] 1fr [body-e];
+
+    height: 730px;
+    width: 520px;
 
     &__toggle {
-
+        grid-row: toggle-s / toggle-e; 
     }
+
     &__body {
+        grid-row: body-s / body-e;
+        height: 675px;
+        width: 520px;
+        background-color: #333333;
+        box-shadow: -3px 20px 20px 0 rgba(0,0,0,0.2);
+
         display: grid;
+        
         &__title {
             
         }
@@ -17,6 +29,7 @@
         }
         &__footer {
             display: grid;
+            // grid-template-columns: 
             &__checkout {
 
             }
@@ -30,4 +43,11 @@
     }
 
 
+}
+
+
+.cart__toggle {
+    display: grid;
+    justify-items: end;
+    align-items: center;
 }
