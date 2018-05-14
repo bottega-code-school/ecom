@@ -30,7 +30,7 @@ class PurchaseHistory extends Component {
                 <div className="purchase-history__details details">
                     {Details('Order Number', 'A004847493', 'order-number')}
                     {Details('Order Date', '01/03/18', 'order-date')}
-                    {Details('Shipping Address', 'J-Hidgey - 1234 WEST STATE', 'shipping-address')}
+                    {Details('Shipping Address', `J-Hidgey 1234 WEST STATE`, 'shipping-address')}
                     {Details('Total', '$8.02', 'total')}
                     {Details('Credit Card', '-0000', 'credit-card')}
                     <div className="details__link details__track-shipment">
@@ -40,6 +40,7 @@ class PurchaseHistory extends Component {
                         Print Receipt
                     </div>
                 </div>
+                <div className="purchase-history__line"></div>
             </div>
         )
     }
