@@ -24,6 +24,7 @@ class SignupForm extends Component {
 
         return (
             <form className="signup-form" onSubmit={handleSubmit}>
+                <h1 className="signup-form__register">Register</h1>
                 <div className="signup-form__name">
                     <label>Name</label>
                     <Field name="name" type="text" component={this.renderInput}/>
@@ -41,8 +42,16 @@ class SignupForm extends Component {
                     <label>Confirm Password</label>
                     <Field name="confirm" type="password" component={this.renderInput}/>
                 </div>
-                <Link to="/">Back</Link>
-                <button type="submit">Create Account</button>
+                <div className="signup-form__line"></div>
+                <Link className="signup-form__back" to="/">Back</Link>
+                <button className="signup-form__submit" type="submit">Create Account</button>
+
+                <div className="password-requirements">
+                    <div className="password-requirements__title">Password Requirements</div>
+                    <label>At least characters</label>
+                    <label>At least one number</label>
+                    <label>At least one symbol</label>
+                </div>
             </form>
         )
     }
