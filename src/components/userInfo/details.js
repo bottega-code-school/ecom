@@ -7,5 +7,11 @@ export const Details = (title, content, className) => (
     </div>
 )
 
+export const PurchasedProduct = (product, index) => (
+    <div key={index} className={`purchased-product`}>
+        <img src={product.imageUrl}/>
+    </div>
+)
+
 
 

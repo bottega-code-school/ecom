@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
 
-import { Details } from './details';
+import { Details, PurchasedProduct } from './details';
+// import {  } from './purchasedProduct';
 
 class PurchaseHistory extends Component {
 
+    renderProducts(productsData) {
+        return productsData.map((product, index) => {
+            return PurchasedProduct(product, index)
+        })
+    }
+
     render() {
+        const productsData = [
+            {imageUrl: 'http://via.placeholder.com/50x50'},
+            {imageUrl: 'http://via.placeholder.com/50x50'},
+            {imageUrl: 'http://via.placeholder.com/50x50'},
+            {imageUrl: 'http://via.placeholder.com/50x50'},
+            {imageUrl: 'http://via.placeholder.com/50x50'},
+            {imageUrl: 'http://via.placeholder.com/50x50'}
+        ]
+
         return (
             <div className="purchase-history">
                 <h1 className="purchase-history__title">Purchase History</h1>
                 <div className="purchase-history__products">
-
+                    {this.renderProducts(productsData)}
                 </div>
                 <div className="details">
                     {Details('Order Number', 'A004847493', 'order-number')}
