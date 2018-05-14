@@ -10,9 +10,15 @@ class Product extends Component {
                     <img src={product.imageUrl}/>
                     <label>{product.title}</label>
                 </div>
-                {/* <div className="product__back">
-
-                </div> */}
+                <div className="product__back back">
+                    <h6 className="back__title">JavaScript in the Browser</h6>
+                    <p className="back__description">Just like you should not use company time to work on your own business, it's highly unethical to take or use other resources such as notebooks, technology, and tools of your craft that belong to your employer.</p>
+                    <div className="back__price">$1.99</div>
+                    <div className="back__amount-box">1</div>
+                    <div className="back__plus">+</div>
+                    <div className="back__minus">-</div>
+                    <a className="back__add-to-cart">Add to Cart</a>
+                </div>
             </div>
         )
     }

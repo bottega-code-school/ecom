@@ -1,5 +1,7 @@
 .product {
+    position: relative;
     &__front {
+        opacity: 0;
         display: grid;
         justify-content: center;
         grid-template-rows: 220px 20px;
@@ -11,5 +13,38 @@
         label {
  
         }
+    }
+
+    &__back {
+        background-color: skyblue;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: grid;
+    }
+}
+
+.back {
+    &__title {
+        
+    }
+    &__description {
+
+    }
+    &__price {
+
+    }
+    &__amount-box {
+
+    }
+    &__plus {
+
+    }
+    &__minus {
+
+    }
+    &__add-to-cart {
+
     }
 }
