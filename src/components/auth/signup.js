@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import SignupForm from './signupForm';
 
+import Header from '../header';
+import Navbar from '../navbar';
+
+
 class Signup extends Component {
 
 
@@ -10,8 +14,15 @@ class Signup extends Component {
     }
 
     render() {
+        const actions = [
+            {
+              title: "Shop", path: "/"
+            }
+        ]
         return (
             <div className="signup">
+                <Header actions={actions}/>
+                <Navbar/>
                 <SignupForm onSubmit={this.handleFormSubmit}/>
             </div>
         )

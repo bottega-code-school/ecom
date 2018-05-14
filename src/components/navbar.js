@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 
 class Navbar extends Component {
+
+  renderActions() {
+    if(this.props.actions) {
+      const actions = this.props.actions.map((action, index) => {
+        return (
+          <a key={index} onClick={() => action.callback(action.title)}>{action.title}</a>
+        )
+      });
+      return actions;
+    }
+  }
+
+
   render() {
     return (
         <ul className="navbar">
-          <li>All</li>
-          <li>JavaScript</li>
-          <li>UI/UX</li>
-          <li>Linux</li>
-          <li>Python</li>
-          <li>UML</li>
-          <li>Ruby</li>
+          {this.renderActions()}
         </ul>
-
     );
   }
 }
