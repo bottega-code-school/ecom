@@ -8,9 +8,10 @@ import Navbar from '../navbar';
 
 class Signin extends Component {
 
-
     handleFormSubmit({email, password}) {
         console.log(email, password);
+
+        this.props.history.push('/user-info');
     }
 
     render() {
@@ -23,10 +24,12 @@ class Signin extends Component {
             <div className="signin">
                 <Header actions={actions}/>
                 <Navbar/>
-                <SigninForm onSubmit={this.handleFormSubmit}/>
+                <SigninForm onSubmit={({email, password}) => this.handleFormSubmit({email, password})}/>
             </div>
         )
     }
 }
+
+
 
 export default Signin;

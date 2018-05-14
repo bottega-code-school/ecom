@@ -18,14 +18,24 @@ import Home from "./components/home";
 import Signup from "./components/auth/signup";
 import Signin from "./components/auth/signin";
 
+import UserInfo from "./components/userInfo/userInfo";
+import PurchaseHistory from './components/userInfo/purchaseHistory';
+import AccountInformation from './components/userInfo/accountInformation';
+
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={Home} />
+         
           <Route path="/signup" component={Signup} />
           <Route path="/signin" component={Signin} />
+
+          <Route path="/user-info" component={UserInfo}/>
+          <Route path="/user-info/purchase-history" component={PurchaseHistory}/>
+          <Route path="/user-info/account-information" component={AccountInformation}/>
+          
         </Switch>
       </BrowserRouter>
     </Provider>,
