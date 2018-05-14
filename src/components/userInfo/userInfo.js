@@ -4,7 +4,7 @@ import Header from '../header';
 import Navbar from '../navbar';
 
 import PurchaseHistory from './purchaseHistory';
-import AccountInformation from './accountInformation';
+import AccountInformationForm from './accountInformationForm';
 
 class UserInfo extends Component {
 
@@ -53,7 +53,7 @@ class UserInfo extends Component {
                 <Header actions={actions}/>
                 <Navbar actions={navbarActions}/>
                 {
-                    this.state.activePage === 'Purchase History' ? <PurchaseHistory/> : <AccountInformation/>
+                    this.state.activePage === 'Purchase History' ? <PurchaseHistory/> : <AccountInformationForm/>
                 }
             </div>
         )
