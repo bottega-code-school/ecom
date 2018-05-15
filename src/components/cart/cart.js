@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import CartProduct from './cartProduct';
 
+import { Link } from 'react-router-dom';
+
 class Cart extends Component {
     render() {
         return (
@@ -26,7 +28,7 @@ class Cart extends Component {
                     </div>
                     <div className="cart__body__footer">
                         <div className="cart__body__footer__checkout">
-                            <a>Checkout</a>
+                            <Link to="/order-review">Checkout</Link>
                         </div>
                         <div className="cart__body__footer__subtotal">Subtotal</div>
                         <div className="cart__body__footer__total">$7.96</div>

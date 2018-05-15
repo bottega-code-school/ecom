@@ -19,6 +19,7 @@ import Signup from "./components/auth/signup";
 import Signin from "./components/auth/signin";
 
 import UserInfo from "./components/userInfo/userInfo";
+import OrderReview from "./components/orderReview/orderReview";
 
 function main() {
   ReactDOM.render(
@@ -31,6 +32,7 @@ function main() {
           <Route path="/signin" component={Signin} />
 
           <Route path="/user-info" component={UserInfo}/>
+          <Route path="/order-review" component={OrderReview}/>
           
         </Switch>
       </BrowserRouter>
