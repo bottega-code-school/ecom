@@ -20,6 +20,7 @@ import Signin from "./components/auth/signin";
 
 import UserInfo from "./components/userInfo/userInfo";
 import OrderReview from "./components/orderReview/orderReview";
+import ShippingAddress from "./components/shippingAddress/shippingAddress";
 
 function main() {
   ReactDOM.render(
@@ -33,6 +34,7 @@ function main() {
 
           <Route path="/user-info" component={UserInfo}/>
           <Route path="/order-review" component={OrderReview}/>
+          <Route path="/shipping-address" component={ShippingAddress}/>
           
         </Switch>
       </BrowserRouter>
