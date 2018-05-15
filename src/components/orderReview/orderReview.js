@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Header from '../header';
 import Navbar from '../navbar';
 
+import { Link } from 'react-router-dom';
+
 class OrderReview extends Component {
 
     render() {
@@ -20,8 +22,8 @@ class OrderReview extends Component {
                 <div className="order-review__content review-content">
 
                 </div>
-                <Link to="/">Back</Link>
-                <Link to="/shipping-address">Proceed to Checkout</Link>
+                <Link className="order-review__back" to="/">Back</Link>
+                <Link className="order-review__proceed" to="/shipping-address">Proceed to Checkout</Link>
                 <div className="order-review__cost review-cost">
                     <div className="review-cost__subtotal">
                         <label className="title">Subtotal</label>
