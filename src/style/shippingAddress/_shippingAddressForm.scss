@@ -1,0 +1,36 @@
+.shipping-address-form {
+    &__title {
+
+    }
+    &__name {
+
+    }
+    &__email {
+
+    }
+    &__city {
+
+    }
+    &__state {
+
+    }
+    &__zipcode {
+        
+    }
+    &__line {
+
+    }
+    &__order-summary {
+
+    }
+}
+
+.order-summary {
+    &__products,
+    &__taxes-shipping,
+    &__total {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 250px;
+    } 
+}

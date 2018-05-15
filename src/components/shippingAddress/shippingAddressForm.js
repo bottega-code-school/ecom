@@ -63,16 +63,16 @@ class ShippingAddressForm extends Component {
 
                 <div className="shipping-address-form__order-summary order-summary">
                     <div className="order-summary__products">
-                        <label className="order-summary__products__title">4 stickers</label>
-                        <label className="order-summary__products__content">$7.96</label>
+                        <label>4 stickers</label>
+                        <label>$7.96</label>
                     </div>
                     <div className="order-summary__taxes-shipping">
-                        <label className="order-summary__products__title">Taxes & Shipping</label>
-                        <label className="order-summary__products__content">$0.16</label>
+                        <label>Taxes & Shipping</label>
+                        <label>$0.16</label>
                     </div>
                     <div className="order-summary__total">
-                        <label className="order-summary__products__title">Total</label>
-                        <label className="order-summary__products__content">$8.02</label>
+                        <label>Total</label>
+                        <label>$8.02</label>
                     </div>
                 </div>
             </form>
