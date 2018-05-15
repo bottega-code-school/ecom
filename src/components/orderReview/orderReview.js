@@ -23,10 +23,17 @@ class OrderReview extends Component {
                 <Navbar/>
                 <h1 className="order-review__title">Order Review</h1>
                 <div className="order-review__content review-content">
-                    <OrderReviewProduct/>
-                    <OrderReviewProduct/>
-                    <OrderReviewProduct/>
-                    <OrderReviewProduct/>
+                    <div className="review-content__header">
+                        <label className="review-content__header__name">Name</label>
+                        <label className="review-content__header__quantity">Quantity</label>
+                        <label className="review-content__header__price">Price</label>
+                    </div>
+                    <div className="review-content__wrapper">
+                        <OrderReviewProduct/>
+                        <OrderReviewProduct/>
+                        <OrderReviewProduct/>
+                        <OrderReviewProduct/>
+                    </div>
                 </div>
                 <Link className="order-review__back" to="/">Back</Link>
                 <Link className="order-review__proceed" to="/shipping-address">Proceed to Checkout</Link>
