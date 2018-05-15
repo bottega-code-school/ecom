@@ -30,8 +30,13 @@
             // display: grid;
             grid-row: products-s / products-e;
             grid-column: body-s / body-e;
-            &__wrapper {
 
+            height: 480px;
+            width: 460px;
+            overflow-y: auto;
+            &__wrapper {
+                display: grid;
+                grid-row-gap: 45px;
             }
         }
         &__footer {
