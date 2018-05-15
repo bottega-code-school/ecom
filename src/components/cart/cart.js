@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
+import CartProduct from './cartProduct';
+
 class Cart extends Component {
     render() {
         return (
             <div className="cart">
 
                 <div className="cart__toggle">
-                    <a class="fa">&#xf00d;</a>
+                    <a className="fa">&#xf00d;</a>
                 </div>
 
                 <div className="cart__body">
@@ -15,7 +17,11 @@ class Cart extends Component {
                     </div>
                     <div className="cart__body__products">
                         <div className="cart__body__products__wrapper">
-                            This is where a bunch of products will go
+                            <CartProduct/>
+                            <CartProduct/>
+                            <CartProduct/>
+                            <CartProduct/>
+                            <CartProduct/>
                         </div>
                     </div>
                     <div className="cart__body__footer">
