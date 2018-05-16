@@ -58,8 +58,9 @@ class ShippingAddressForm extends Component {
                     <Field name="zipcode" type="zipcode" component={this.renderInput}/>
                 </div>
                 <div className="shipping-address-form__line"></div>
-                <Link to="/order-review">Back</Link>
-                <a onClick={() => this.setState({ showModal: true })}>Use this Address</a>
+
+                <Link className="shipping-address-form__back" to="/order-review">Back</Link>
+                <a className="shipping-address-form__use-this-address" onClick={() => this.setState({ showModal: true })}>Use this Address</a>
 
                 <div className="shipping-address-form__order-summary order-summary">
                     <div className="order-summary__products">
