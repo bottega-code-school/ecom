@@ -15,9 +15,6 @@ class ShippingAddressForm extends Component {
         }
     }
 
-    componentDidUpdate() {
-        console.log(this.state);
-    }
 
     renderInput(field) {
         return (
