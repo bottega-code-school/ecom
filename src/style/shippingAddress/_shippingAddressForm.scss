@@ -59,6 +59,14 @@
 }
 
 .order-summary {
+    font-family: "Open Sans";
+    &__title {
+        color: #808080;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        border-bottom: 1px solid #CCCCCC;
+    }
     &__products,
     &__taxes-shipping,
     &__total {

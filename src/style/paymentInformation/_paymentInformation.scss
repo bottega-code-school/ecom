@@ -57,7 +57,16 @@
 
 .shipping-to {
     display: grid; 
-    grid-template-rows: [name-s] 1fr [name-e address-s] 1fr [address-e];
+    grid-template-rows: [title-s] 1fr [title-e name-s] 1fr [name-e address-s] 1fr [address-e];
+    font-family: "Open Sans";
+    &__title {
+        grid-row: title-s/title-e;
+        color: #808080;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        border-bottom: 1px solid #CCCCCC;
+    }
     &__name {
         grid-row: name-s/name-e;
     }

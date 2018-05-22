@@ -58,6 +58,7 @@ class PaymentInformationForm extends Component {
                 <a className="payment-information-form__pay-and-complete-order" onClick={() => this.setState({ showModal: true })}>Pay and Complete Order</a>
 
                 <div className="payment-information-form__order-summary order-summary">
+                    <h1 className="order-summary__title">Order Summary</h1>
                     <div className="order-summary__products">
                         <label>4 stickers</label>
                         <label>$7.96</label>
@@ -72,6 +73,7 @@ class PaymentInformationForm extends Component {
                     </div>
                 </div>
                 <div className="payment-information-form__shipping-to shipping-to">
+                    <h1 className="shipping-to__title">Shipping To</h1>
                     <label className="shipping-to__name">Jordan Hudgens</label>
                     <label className="shipping-to__address">1234 West State Street...</label>
                 </div>

@@ -63,6 +63,7 @@ class ShippingAddressForm extends Component {
                 <a className="shipping-address-form__use-this-address" onClick={() => this.setState({ showModal: true })}>Use this Address</a>
 
                 <div className="shipping-address-form__order-summary order-summary">
+                    <h1 className="order-summary__title">Order Summary</h1>
                     <div className="order-summary__products">
                         <label>4 stickers</label>
                         <label>$7.96</label>
