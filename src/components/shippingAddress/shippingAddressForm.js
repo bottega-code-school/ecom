@@ -77,6 +77,24 @@ class ShippingAddressForm extends Component {
                         <label>$8.02</label>
                     </div>
                 </div>
+                {
+                    this.state.showModal ?
+                        <div className="modal">
+                            <div className="modal-box">
+                                <label className="modal-box__title">
+                                    Save Address
+                                </label>
+                                <label className="modal-box__sub-title">
+                                    Would you like to save this address on file for future purchases with GummyCode?
+                                </label>
+                                <button className="modal-box__save-this-address">Save This Address</button>
+                                <button className="modal-box__dont-save">Dont Save</button>
+                            </div>
+                        </div>
+                    :
+                        ''
+                }
+        
             </form>
         )
     }
