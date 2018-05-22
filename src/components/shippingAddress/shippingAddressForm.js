@@ -78,7 +78,19 @@ class ShippingAddressForm extends Component {
                 </div>
 
                 {
-                    this.state.showModal ? <Modal onTapOutside={() => this.setState({ showModal: false })}/> : ''
+                    this.state.showModal ? 
+                    <Modal
+                        title="Save Address"
+                        message="Would you like to save this address on file for future purchases with GummyCode?"
+                        buttons = {
+                            [
+                                <Link key={0} to="/payment-information"><button className="modal-box__save-address">Save Address</button></Link>,
+                                <Link key={1} to="/payment-information"><button className="modal-box__dont-save">Don't Save</button></Link>
+                            ]
+                        }
+                        onTapOutside={() => this.setState({ showModal: false })}
+                    /> 
+                    : ''
                 }
 
             </form>

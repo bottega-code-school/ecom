@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { Link } from 'react-router-dom';
 
+import Modal from '../modal';
+
 class PaymentInformationForm extends Component {
 
     constructor(props) {
@@ -11,10 +13,6 @@ class PaymentInformationForm extends Component {
         this.state = {
             showModal: false
         }
-    }
-
-    componentDidUpdate() {
-        console.log(this.state);
     }
 
     renderInput(field) {
@@ -77,6 +75,24 @@ class PaymentInformationForm extends Component {
                     <label className="shipping-to__name">Jordan Hudgens</label>
                     <label className="shipping-to__address">1234 West State Street...</label>
                 </div>
+                {
+                    this.state.showModal ? 
+                    <Modal
+                        title="Thank You!"
+                        message="Your order number is: A0029872922
+                        We’ve received your order and it will be fulfilled and 
+                        shipped within the next business day.
+                        Login to your account for purchase history and order 
+                        shipping information."
+                        buttons = {
+                            [
+                                <Link key={0} to="/"><button className="modal-box__save-address">Got It!</button></Link>,
+                            ]
+                        }
+                        onTapOutside={() => this.setState({ showModal: false })}
+                    /> 
+                    : ''
+                }
             </form>
         )
     }
