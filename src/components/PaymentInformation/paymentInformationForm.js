@@ -34,35 +34,30 @@ class PaymentInformationForm extends Component {
         const { handleSubmit } = this.props;
 
         return (
-            <form className="shipping-address-form" onSubmit={handleSubmit}>
-                <h1 className="shipping-address-form__title">Shipping Address</h1>
-                <div className="shipping-address-form__name">
-                    <label>Name</label>
+            <form className="payment-information-form" onSubmit={handleSubmit}>
+                <h1 className="payment-information-form__title">Payment Information</h1>
+                <div className="payment-information-form__name-on-credit-card">
+                    <label>Name on Credit Card</label>
                     <Field name="name" type="text" component={this.renderInput}/>
                 </div>
-                <div className="shipping-address-form__email">
-                    <label>Email</label>
-                    <Field name="email" type="email" component={this.renderInput}/>
+                <div className="payment-information-form__credit-card-number">
+                    <label>Credit Card Number</label>
+                    <Field name="credit-card-number" type="text" component={this.renderInput}/>
                 </div>
-                <div className="shipping-address-form__city">
-                    <label>City</label>
-                    <Field name="city" type="city" component={this.renderInput}/>
+                <div className="payment-information-form__expiration-date">
+                    <label>Expiration Date</label>
+                    <Field name="expiration-date" type="text" component={this.renderInput}/>
                 </div>
+                <div className="payment-information-form__ccv">
+                    <label>CCV</label>
+                    <Field name="ccv" type="text" component={this.renderInput}/>
+                </div>
+               
 
-                <div className="shipping-address-form__state">
-                    <label>State</label>
-                    <Field name="state" type="state" component={this.renderInput}/>
-                </div>
-                <div className="shipping-address-form__zipcode">
-                    <label>Zipcode</label>
-                    <Field name="zipcode" type="zipcode" component={this.renderInput}/>
-                </div>
-                <div className="shipping-address-form__line"></div>
+                <Link className="payment-information-form__back" to="/order-review">Back</Link>
+                <a className="payment-information-form__pay-and-complete-order" onClick={() => this.setState({ showModal: true })}>Pay and Complete Order</a>
 
-                <Link className="shipping-address-form__back" to="/order-review">Back</Link>
-                <a className="shipping-address-form__use-this-address" onClick={() => this.setState({ showModal: true })}>Use this Address</a>
-
-                <div className="shipping-address-form__order-summary order-summary">
+                <div className="payment-information-form__order-summary order-summary">
                     <div className="order-summary__products">
                         <label>4 stickers</label>
                         <label>$7.96</label>
@@ -75,6 +70,10 @@ class PaymentInformationForm extends Component {
                         <label>Total</label>
                         <label>$8.02</label>
                     </div>
+                </div>
+                <div className="payment-information-form__shipping-to shipping-to">
+                    <label className="shipping-to__name">Jordan Hudgens</label>
+                    <label className="shipping-to__address">1234 West State Street....</label>
                 </div>
             </form>
         )
