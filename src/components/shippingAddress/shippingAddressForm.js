@@ -81,7 +81,7 @@ class ShippingAddressForm extends Component {
                 </div>
 
                 {
-                    this.state.showModal ? <Modal/> : ''
+                    this.state.showModal ? <Modal onTapOutside={() => this.setState({ showModal: false })}/> : ''
                 }
 
             </form>
