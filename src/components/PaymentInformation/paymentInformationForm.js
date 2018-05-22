@@ -53,7 +53,7 @@ class PaymentInformationForm extends Component {
                     <Field name="ccv" type="text" component={this.renderInput}/>
                 </div>
                
-
+                <div className="payment-information-form__line"></div>
                 <Link className="payment-information-form__back" to="/order-review">Back</Link>
                 <a className="payment-information-form__pay-and-complete-order" onClick={() => this.setState({ showModal: true })}>Pay and Complete Order</a>
 
@@ -73,7 +73,7 @@ class PaymentInformationForm extends Component {
                 </div>
                 <div className="payment-information-form__shipping-to shipping-to">
                     <label className="shipping-to__name">Jordan Hudgens</label>
-                    <label className="shipping-to__address">1234 West State Street....</label>
+                    <label className="shipping-to__address">1234 West State Street...</label>
                 </div>
             </form>
         )
